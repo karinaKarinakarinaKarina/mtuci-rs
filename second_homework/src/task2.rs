@@ -12,30 +12,30 @@
 fn main() {}
 
 struct Rect {
-    top_left: {x: f32, y: f32 },
-    width: f32
+    x: f32,
+    y: f32,
+    lenght: f32
 }
 
 impl Rect {
     fn new(top_left: (f32, f32), width: f32) -> Self {
-        React {
-            top_left: top_left,
-            width: width
+        Rect {
+            x: top_left.0,
+            y: top_left.1,
+            lenght: width
         }
     }
 
     fn bottom_right(&self) -> (f32, f32) {
-        x = -x.self.top_left;
-        y = -y.self.top_left;
-        (x,y)
+        (self.x + self.lenght, self.y - self.lenght)
     }
 
     fn area(&self) -> f32 {
-        self.width**2
+        self.lenght * self.lenght
     }
 
     fn perimeter(&self) -> f32 {
-        self.width * 4
+        2.*(self.lenght + self.lenght)
     }
 }
 
