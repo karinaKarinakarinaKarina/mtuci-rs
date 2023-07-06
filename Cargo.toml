@@ -1,5 +1,5 @@
 [workspace]
 members = [
-    "first_homework/second_homework"
+    "second_homework"
 
 ]
