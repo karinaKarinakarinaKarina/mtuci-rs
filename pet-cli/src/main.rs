@@ -119,7 +119,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
                     Block::default()
                         .borders(Borders::ALL)
                         .style(Style::default().fg(Color::White))
-                        .title("Copyright")
+                        .title("Prikol")
                         .border_type(BorderType::Plain),
                 );
 
